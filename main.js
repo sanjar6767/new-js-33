@@ -249,6 +249,15 @@ function renderData (data){
     })
 }
 
+
+hamburger.addEventListener("click",()=>{
+    text.classList.toggle("show")
+    btns.classList.toggle("show")
+
+})
+
+renderData(menu)
+
 search.addEventListener("input", (e)=>{
     manucards.innerHTML = ``
     let ar = menu.filter((cofe)=>{
@@ -258,9 +267,4 @@ search.addEventListener("input", (e)=>{
     console.log(ar);
 });
 
-renderData(menu)
 
-hamburger.addEventListener("click",()=>{
-    text.classList.toggle("show")
-    btns.classList.toggle("show")
-})
